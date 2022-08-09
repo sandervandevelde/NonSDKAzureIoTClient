@@ -8,7 +8,7 @@ This demonstration is not feature complete or production ready.
 
 I personally recommend to use the Azure IoT Device SDKs if possible. 
 
-These are production ready, production tested by many users and devices are resillient against many issues that can occur in the lifetime of an IoT device.
+These are production ready, production tested by many users and devices are resilient against many issues that can occur in the lifetime of an IoT device.
 
 ## Credits
 
