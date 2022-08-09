@@ -10,6 +10,10 @@ I personally recommend to use the Azure IoT Device SDKs if possible.
 
 These are production ready, production tested by many users and devices are resillient against many issues that can occur in the lifetime of an IoT device.
 
+## Credits
+
+This repo is initially based on this [blog post](https://www.petecodes.co.uk/connecting-a-raspberry-pi-pico-w-to-microsoft-azure-iot-hub-using-micropython-and-mqtt/) of my friend Pete Gallagher @pete_codes.
+
 ## Demonstrated logic
 
 The following logic is demonstrated
@@ -29,11 +33,9 @@ The following logic is demonstrated
 
 The following logic is missing:
 
-- File upload (if possible?)
 - Supporting another certificate because the baltimore certificate is deprecated soon
 - Creating the SAS token on the device itself so it can be refresh once the current one expires.
 - Everything else I forgot to research
-
 
 ## Links
 
