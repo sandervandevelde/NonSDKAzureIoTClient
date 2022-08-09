@@ -12,7 +12,7 @@ These are production ready, production tested by many users and devices are resi
 
 ## Credits
 
-This repo is initially based on this [blog post](https://www.petecodes.co.uk/connecting-a-raspberry-pi-pico-w-to-microsoft-azure-iot-hub-using-micropython-and-mqtt/) of my friend Pete Gallagher @pete_codes.
+This repo is initially based on this [blog post](https://www.petecodes.co.uk/connecting-a-raspberry-pi-pico-w-to-microsoft-azure-iot-hub-using-micropython-and-mqtt/) written by my friend Pete Gallagher @pete_codes.
 
 ## Demonstrated logic
 
