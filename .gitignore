@@ -353,3 +353,7 @@ config/
 .env
 
 appsettings*.json
+
+.vscode/
+
+*.sln
