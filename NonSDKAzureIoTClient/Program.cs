@@ -134,9 +134,11 @@ namespace NonSDKAzureIoTClient
 
                 Console.WriteLine($"Received application message: {args.ApplicationMessage.ConvertPayloadToString()}");
 
-                if (args.ApplicationMessage.Topic.Split("devicebound").Length > 2)
+                //// Notice the topic contains both 'devicebound' and 'deviceBound'
+
+                if (args.ApplicationMessage.Topic.ToLower().Split("devicebound").Length > 2)
                 {
-                    var properties = args.ApplicationMessage.Topic.Split("devicebound")[2];
+                    var properties = args.ApplicationMessage.Topic.ToLower().Split("devicebound")[2];
 
                     var propertyList = properties.Split('&', StringSplitOptions.RemoveEmptyEntries);
 
