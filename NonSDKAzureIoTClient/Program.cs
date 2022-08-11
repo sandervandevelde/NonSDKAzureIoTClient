@@ -101,7 +101,8 @@ namespace NonSDKAzureIoTClient
                     AllowUntrustedCertificates = true,
                     Certificates = new List<X509Certificate>
                     {
-                            new X509Certificate2("baltimore.cer")
+                        //// BE AWARE, this certificate will expire in March 2023! See also the readme.md
+                        new X509Certificate2("baltimore.cer")
                     },
                     UseTls = true,
                 })
@@ -247,7 +248,7 @@ namespace NonSDKAzureIoTClient
                 await mqttClient.PublishAsync(message);
                 Console.WriteLine("sent");
 
-                Thread.Sleep(5000);
+                Thread.Sleep(10000);
             }
         }
 
