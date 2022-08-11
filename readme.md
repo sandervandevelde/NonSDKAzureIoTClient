@@ -34,8 +34,8 @@ The following logic is demonstrated
 The following logic is missing:
 
 - Supporting another certificate while the baltimore certificate is deprecated soon
-- Creating the SAS token on the device itself so it can be refresh once the current one expires.
-- Everything else I forgot to research
+- Creating the SAS token on the device itself so it can be refresh once the current one expires
+- No error handling
 
 ## Links
 
@@ -45,4 +45,4 @@ https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-mqtt-support
 
 ### Samples
 
-https://github.com/Azure-Samples/IoTMQTTSample/blob/master/src/Windows/PnPMQTTWin32/PnPMQTTWin32.cpp
+https://github.com/Azure-Samples/IoTMQTTSample/tree/master/src
