@@ -27,4 +27,4 @@ See [this site](https://techcommunity.microsoft.com/t5/internet-of-things-blog/a
 
 This sample application lacks:
 
-- Supporting another certificate because the baltimore certificate is deprecated soon
+- Supporting another certificate while the baltimore certificate is deprecated soon

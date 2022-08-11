@@ -33,7 +33,7 @@ The following logic is demonstrated
 
 The following logic is missing:
 
-- Supporting another certificate because the baltimore certificate is deprecated soon
+- Supporting another certificate while the baltimore certificate is deprecated soon
 - Creating the SAS token on the device itself so it can be refresh once the current one expires.
 - Everything else I forgot to research
 
