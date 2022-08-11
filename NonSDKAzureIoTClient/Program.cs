@@ -193,7 +193,6 @@ namespace NonSDKAzureIoTClient
                 Console.WriteLine($"Received message: {args.ApplicationMessage.ConvertPayloadToString()}");
 
                 return Task.CompletedTask;
-
             }
 
             // Reported properties response to update received
@@ -207,17 +206,14 @@ namespace NonSDKAzureIoTClient
 
                 Console.WriteLine($"Reported Twin response on request received with id {requestid} and version {version}");
 
-                Console.WriteLine($"Received message: {args.ApplicationMessage.ConvertPayloadToString()??"Empty payload"}");
+                Console.WriteLine($"Received message: '{args.ApplicationMessage.ConvertPayloadToString()??"Empty payload"}' as response");
 
                 return Task.CompletedTask;
-
             }
-
 
             Console.WriteLine($"UNHANDLED '{args.ApplicationMessage.Topic}' RECEIVED");
 
             return Task.CompletedTask;
-
         }
 
         private static async void ThreadBody()
