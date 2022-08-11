@@ -220,7 +220,7 @@ namespace NonSDKAzureIoTClient
         {
             await RequestLatestDeviceTwinFromCloud();
 
-            SendReportedPropertUpdateToCloud();
+            SendReportedPropertiesUpdateToCloud();
 
             while (true)
             {
@@ -259,7 +259,7 @@ namespace NonSDKAzureIoTClient
             Console.WriteLine("Requested latest DeviceTwin with request id 42");
         }
 
-        private static void SendReportedPropertUpdateToCloud()
+        private static void SendReportedPropertiesUpdateToCloud()
         {
             // send reported property
             var payloadStringReportedProp = "{ \"telemetrySendFrequency\": \"" + DateTime.Now.Second.ToString() + "m\"}";
@@ -269,7 +269,7 @@ namespace NonSDKAzureIoTClient
                 .WithQualityOfServiceLevel(MQTTnet.Protocol.MqttQualityOfServiceLevel.AtLeastOnce)
                 .Build();
             mqttClient.PublishAsync(messageReportedProp).Wait();
-            Console.WriteLine("Reported property response sent");
+            Console.WriteLine($"Reported properties update sent: '{payloadStringReportedProp}'");
         }
     }
 }
