@@ -10,6 +10,12 @@ I personally recommend to use the Azure IoT Device SDKs if possible.
 
 These are production ready, production tested by many users and devices are resilient against many issues that can occur in the lifetime of an IoT device.
 
+## Deprecated Baltimore certificate? 
+
+This example still shows the use of the now deprecated Baltimore TLS certificate.
+
+Please check [this post](https://sandervandevelde.wordpress.com/2023/01/25/does-your-azure-iot-edge-ubuntu-device-survive-the-baltimore-certificate-migration/) regarding the TLS certificate replacement. 
+
 ## Credits
 
 This repo is inspired by this [blog post](https://www.petecodes.co.uk/connecting-a-raspberry-pi-pico-w-to-microsoft-azure-iot-hub-using-micropython-and-mqtt/) written by my friend Pete Gallagher @pete_codes.
